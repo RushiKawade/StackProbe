@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>StackProbe</title>
+	<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<script type="text/javascript">
+		
+			window.onload=function()
+			{
+				var chart=new CanvasJS.Chart("ChartContainer",{
+					theme:"theme1",
+					title:{
+						text:"Basic Column Charts"
+					},
+					animationEnabled:false,
+					data:[
+							{
+								type:"column",
+								dataPoints:[
+												{label:"python" ,y=18},
+												{label:"c" ,y=18},
+												{label:"cpp" ,y=98},
+												{label:"java" ,y=28},
+												{label:"nodejs" ,y=88}
+								]
+							}
+					]
+				});
+				chart.render();
+			}
+	</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+<script src="canvasjs.min.js"></script>
+</body>
+</html>
